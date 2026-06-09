@@ -24,8 +24,10 @@ public:
     void searchByPublisher(string key);
 };
 
+//Constructor
 inline BookStore::BookStore() {}
 
+//Set data for the bookstore
 inline void BookStore::setData(const string t[], const string a[], const string p[], const double pr[]) {
 
     for (int i = 0; i < MAX_BOOKS; i++) {
@@ -93,6 +95,7 @@ inline void BookStore::searchByPublisher(string key) {
         cout << "\n[!] Publisher not found.\n";
 }
 
+// Insertion Sort based on criteria (1: Author, 2: Publisher, 3: Price)
 inline void BookStore::insertionSort(int criteria) {
     for (int i = 1; i < MAX_BOOKS; i++) {
 
@@ -136,6 +139,7 @@ inline void BookStore::insertionSort(int criteria) {
     }
 }
 
+// Display all books in the bookstore
 inline void BookStore::displayBooks() {
     for (int i = 0; i < MAX_BOOKS; i++) {
         cout << "Title: " << title[i] << endl;
