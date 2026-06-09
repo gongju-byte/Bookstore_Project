@@ -42,7 +42,7 @@ inline void BookStore::searchByTitle(string key) {
 
     for (int i = 0; i < MAX_BOOKS; i++) {
         if (title[i] == key) {
-            cout << "\n[FOUND]\n";
+            cout << "\n[!] FOUND TITLE AT INDEX " << i << "\n";
             cout << "Title     : " << title[i] << endl;
             cout << "Author    : " << author[i] << endl;
             cout << "Publisher : " << publisher[i] << endl;
@@ -61,7 +61,7 @@ inline void BookStore::searchByAuthor(string key) {
 
     for (int i = 0; i < MAX_BOOKS; i++) {
         if (author[i] == key) {
-            cout << "\n[FOUND]\n";
+            cout << "\n[!] FOUND AUTHOR AT INDEX " << i << "\n";
             cout << "Title     : " << title[i] << endl;
             cout << "Author    : " << author[i] << endl;
             cout << "Publisher : " << publisher[i] << endl;
@@ -80,7 +80,7 @@ inline void BookStore::searchByPublisher(string key) {
 
     for (int i = 0; i < MAX_BOOKS; i++) {
         if (publisher[i] == key) {
-            cout << "\n[FOUND]\n";
+            cout << "\n[!] FOUND PUBLISHER AT INDEX " << i << "\n";
             cout << "Title     : " << title[i] << endl;
             cout << "Author    : " << author[i] << endl;
             cout << "Publisher : " << publisher[i] << endl;
