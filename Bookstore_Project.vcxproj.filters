@@ -18,12 +18,6 @@
     <ClInclude Include="Bookstore.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Sorting.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Searching.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Book.h">
       <Filter>Header Files</Filter>
     </ClInclude>

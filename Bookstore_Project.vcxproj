@@ -125,8 +125,6 @@
   <ItemGroup>
     <ClInclude Include="Book.h" />
     <ClInclude Include="Bookstore.h" />
-    <ClInclude Include="Searching.h" />
-    <ClInclude Include="Sorting.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BookstoreMain.cpp" />
