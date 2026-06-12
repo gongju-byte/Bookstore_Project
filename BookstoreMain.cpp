@@ -97,7 +97,8 @@ int main() {
 			cout << "----- SORT BY -----" << endl;
 			cout << "1. Author" << endl;
 			cout << "2. Publisher" << endl;
-			cout << "3. Price" << endl;
+			cout << "3. Price (Ascending)" << endl;
+			cout << "4. Price (Descending)" << endl;
 			cout << "0. Exit" << endl;
 			cout << "Your choice: ";
 
@@ -136,7 +137,19 @@ int main() {
 
 				bookstore.insertionSort(3);
 				system("cls");
-				cout << "----- SORTED BY PRICE -----" << endl;
+				cout << "----- SORTED BY PRICE (ASCENDING) -----" << endl;
+				bookstore.displayBooks();
+				cout << "\n[?] Press enter to continue" << endl;
+				cin.clear();
+				cin.ignore(numeric_limits<streamsize>::max(), '\n');
+				cin.get();
+
+			}
+			else if (sub == 4) {
+
+				bookstore.insertionSort(4);
+				system("cls");
+				cout << "----- SORTED BY PRICE (DESCENDING) -----" << endl;
 				bookstore.displayBooks();
 				cout << "\n[?] Press enter to continue" << endl;
 				cin.clear();

@@ -118,6 +118,9 @@ inline void BookStore::insertionSort(int criteria) {
             else if (criteria == 3) {
                 condition = (price[j - 1] > nextPrice);
             }
+            else if (criteria == 4) {
+                condition = (price[j - 1] < nextPrice);
+            }
 
             if (condition) {
 
